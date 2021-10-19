@@ -3,6 +3,6 @@ import './LittlePhotoSelector.css';
 
 export function LittlePhotoSelector(props) {
     return (
-        <img src={props.src}></img>
+        <img className={"img-small"} src={props.src}></img>
     )
 }
