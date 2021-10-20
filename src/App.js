@@ -7,12 +7,7 @@ import { useState } from 'react';
 
 function App() {
 
-  let [selectedUrl, setSelectedUrl] = useState(imageUrls[0]);
-
-  function thumbnailClicked(url) {
-    setSelectedUrl(url);
-    console.log(`clicked on url ${url}`);
-  }
+  const [selectedUrl, setSelectedUrl] = useState(imageUrls[0]);
 
   return (
     <div className="App">
@@ -21,11 +16,11 @@ function App() {
       </header>
       <main>
         <h1>Photo Viewer</h1>
-        <BigPhotoViewer src={selectedUrl}></BigPhotoViewer>
+        <BigPhotoViewer src={selectedUrl}/>
         <p>Viewing url: {selectedUrl}</p>
-        {imageUrls.map(function(src, index) {
-          return <LittlePhotoSelector key={index} src={src} onClick={() => thumbnailClicked(src)}></LittlePhotoSelector>
-        })}
+        {imageUrls.map((src) => 
+          <LittlePhotoSelector key={src} src={src} active={src === selectedUrl} onClick={() => {setSelectedUrl(src)}}/>
+        )}
       </main>
     </div>
   );
