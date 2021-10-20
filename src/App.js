@@ -16,13 +16,10 @@ function App() {
           <img src="https://res.cloudinary.com/dgx8goyms/images/f_auto,q_auto/v1603174722/softwire-logo/softwire-logo.png" className="Sw-logo" alt="softwire logo"/>
           <img src={logo} className="App-logo" alt="react logo" />
         </div>
-        <div className="Header-transition">
-
-        </div>
       </header>
       <main>
         <h1>Photo Viewer</h1>
-        <BigPhotoViewer src={selectedUrl}/>
+        <BigPhotoViewer id="Big-photo-viewer" src={selectedUrl}/>
         <p>Viewing url: {selectedUrl}</p>
         <div className="Thumbnail-container">
           {imageUrls.map((src) => 
