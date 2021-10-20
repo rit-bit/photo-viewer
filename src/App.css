@@ -35,15 +35,10 @@
 .Thumbnail-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 90vw;
+  margin: 0 10% 0 10%;
 }
-
-/*
-.Header-transition {
-  background: linear-gradient(to bottom, #4c5463 20%, #ffffff 100%);
-  min-height: 20px;
-}
-*/
 
 @keyframes App-logo-spin {
   from {

@@ -1,5 +1,5 @@
 .img-small {
-    display: inline-flex;
+    display: inline;
     width: 25%;
     margin: 1%;
     border: 5px solid white;
@@ -10,7 +10,7 @@
 }
 
 .img-small-selected {
-    display: inline-flex;
+    display: inline;
     width: 25%;
     margin: 1%;
     border: 5px solid transparent;
