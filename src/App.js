@@ -12,15 +12,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="Header-main">
+          <img src="https://res.cloudinary.com/dgx8goyms/images/f_auto,q_auto/v1603174722/softwire-logo/softwire-logo.png" className="Sw-logo" alt="softwire logo"/>
+          <img src={logo} className="App-logo" alt="react logo" />
+        </div>
+        <div className="Header-transition">
+
+        </div>
       </header>
       <main>
         <h1>Photo Viewer</h1>
         <BigPhotoViewer src={selectedUrl}/>
         <p>Viewing url: {selectedUrl}</p>
-        {imageUrls.map((src) => 
-          <LittlePhotoSelector key={src} src={src} active={src === selectedUrl} onClick={() => {setSelectedUrl(src)}}/>
-        )}
+        <div className="Thumbnail-container">
+          {imageUrls.map((src) => 
+            <LittlePhotoSelector key={src} src={src} active={src === selectedUrl} onClick={() => {setSelectedUrl(src)}}/>
+          )}
+        </div>
       </main>
     </div>
   );
