@@ -40,6 +40,14 @@
   margin: 0 10% 0 10%;
 }
 
+.photos-in-line-div {
+  display: block;
+  background-color: white;
+  box-shadow: 0 6px 10px rgba(57, 63, 72, 0.3);
+  position: sticky;
+  top: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,6 +1,6 @@
 .img-small {
     display: inline;
-    width: 25%;
+    
     margin: 1%;
     border: 5px solid white;
     border-radius: 12px;
@@ -8,6 +8,7 @@
 
 .img-small:hover {
     border: 5px solid gainsboro;
+    border-radius: 0;
 }
 
 .img-small-selected {
@@ -17,4 +18,16 @@
     border: 5px solid transparent;
     border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
+}
+
+.thumbsize-3 {
+    width: 25%;
+}
+
+.thumbsize-4 {
+    width: 20%;
+}
+
+.thumbsize-5 {
+    width: 15%;
 }
