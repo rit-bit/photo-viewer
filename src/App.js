@@ -28,8 +28,11 @@ function App() {
         <BigPhotoViewer id="Big-photo-viewer" src={selectedUrl}/>
         <p>Viewing url: {selectedUrl}</p>
         <div className="photos-in-line-div">
-          <button id="photos-in-line-button" onClick={changePhotosInLine}>{photosInLine}</button>
-        </div>
+          <button id="photos-in-line-button" onClick={changePhotosInLine}>
+            <img src="https://static.thenounproject.com/png/110306-200.png" alt="grid view icon" width="30px"/>
+            {" " + photosInLine}
+            </button>
+          </div>
         <div className="Thumbnail-container">
           {imageUrls.map((src) => 
             <LittlePhotoSelector

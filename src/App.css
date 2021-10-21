@@ -41,11 +41,13 @@
 }
 
 .photos-in-line-div {
-  display: block;
-  background-color: white;
-  box-shadow: 0 6px 10px rgba(57, 63, 72, 0.3);
+  display: flex;
+  /*box-shadow: 0 6px 10px rgba(57, 63, 72, 0.3);*/
+  margin-left: 5%;
+  justify-content: left;
+  align-content: center;
   position: sticky;
-  top: 0;
+  top: 2rem;
 }
 
 @keyframes App-logo-spin {
